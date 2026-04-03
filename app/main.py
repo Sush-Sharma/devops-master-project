@@ -3,10 +3,14 @@ from sqlalchemy.orm import Session
 from app.database import SessionLocal, engine
 from app import models
 
-models.Base.metadata.create_all(bind=engine)
-
 app = FastAPI()
 
+# Run DB setup only when app starts
+@app.on_event("startup")
+def on_startup():
+    models.Base.metadata.create_all(bind=engine)
+
+# Dependency for DB session
 def get_db():
     db = SessionLocal()
     try:
@@ -14,6 +18,7 @@ def get_db():
     finally:
         db.close()
 
+# Routes
 @app.get("/")
 def home():
     return {"message": "API is working"}
