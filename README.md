@@ -110,10 +110,11 @@ Both services communicate using Docker internal networking.
 
 ## 📸 Screenshots
 
-*(Add these later)*
+### CI Pipeline
+![Pipeline](screenshots/Pipeline.png)
 
-* GitHub Actions pipeline (successful run)
-* Running application in browser
+### Application Running
+![App](screenshots/API Running.png)
 
 ---
 
