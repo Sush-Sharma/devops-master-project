@@ -114,7 +114,7 @@ Both services communicate using Docker internal networking.
 ![Pipeline](screenshots/Pipeline.png)
 
 ### Application Running
-![App](screenshots/API Running.png)
+![App](screenshots/API_Running.png)
 
 ---
 
