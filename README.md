@@ -57,7 +57,7 @@ devops-master-project/
 ### 1. Clone the repository
 
 ```
-git clone <your-repo-link>
+git clone <https://github.com/Sush-Sharma>
 cd devops-master-project
 ```
 
